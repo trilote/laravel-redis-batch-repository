@@ -243,4 +243,9 @@ class RedisBatchRepository implements PrunableBatchRepository
     {
         return $this->redisPrefix . 'failed_job_ids_' . $batchId;
     }
+
+    public function rollBack()
+    {
+        // noop (não faz nada)
+    }
 }
